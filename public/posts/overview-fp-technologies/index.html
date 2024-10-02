@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Overview Fp Technologies | My New Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="The goal of this article is to research the most popular FP based technologies.
+Maybe you will like and adapt some of them.
+Disclaimer
+I have to confess that after looking at projects and languages and theories behind them, I became adept of FP if not languages but definitely of practices.
+A little bit of historical context
+This engaging talk has a lot of references to historical moments:
+&ldquo;Propositions as Types&rdquo; by Philip Wadler - YouTube">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/overview-fp-technologies/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/overview-fp-technologies/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Overview Fp Technologies
+    </h1>
+    <div class="post-meta"><span title='2024-10-02 15:41:08 +0400 +04'>October 2, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>The goal of this article is to research the most popular FP based technologies.
+Maybe you will like and adapt some of them.</p>
+<h5 id="disclaimer">Disclaimer<a hidden class="anchor" aria-hidden="true" href="#disclaimer">#</a></h5>
+<p>I have to confess that after looking at projects and languages and theories behind them, I became adept of FP if not languages but definitely of practices.</p>
+<h1 id="a-little-bit-of-historical-context">A little bit of historical context<a hidden class="anchor" aria-hidden="true" href="#a-little-bit-of-historical-context">#</a></h1>
+<p>This engaging talk has a lot of references to historical moments:
+<a href="https://youtu.be/IOiZatlZtGU?si=3a2duU8bKRotpmcJ">&ldquo;Propositions as Types&rdquo; by Philip Wadler - YouTube</a></p>
+<h3 id="lisp">Lisp<a hidden class="anchor" aria-hidden="true" href="#lisp">#</a></h3>
+<p>The first implementation based on lambda calculus - math background. Not just engineered, but also with good theoretical background. Today ELisp is used for Emacs.</p>
+<h3 id="haskell">Haskell<a hidden class="anchor" aria-hidden="true" href="#haskell">#</a></h3>
+<p>The first purely functional academic language to become relatavely popular, is called <a href="https://www.haskell.org/">Haskell</a>, was created in 1990. Since then a lot new languages and technologies appeared. Let&rsquo;s observe the most popular open source projects written in mostly pure functional languages for last 30+ years.</p>
+<h3 id="ocaml">OCaml<a hidden class="anchor" aria-hidden="true" href="#ocaml">#</a></h3>
+<p>OCaml was written in 1996 in France. It was inspired by a long line of research into ML, starting in the 1960s, and continues to have deep links to the academic community.</p>
+<h3 id="ml-meta-language">ML (Meta Language)<a hidden class="anchor" aria-hidden="true" href="#ml-meta-language">#</a></h3>
+<h1 id="top-projects-grouped-by-language">Top projects grouped by language<a hidden class="anchor" aria-hidden="true" href="#top-projects-grouped-by-language">#</a></h1>
+<h2 id="elixir">Elixir<a hidden class="anchor" aria-hidden="true" href="#elixir">#</a></h2>
+<p>Appeared at 2012. Built on top of BEAM to make Erlang\OTP runtime more accessible, because Erlang is not user friendly really; and shares the same abstractions and OTP framework for building distributed, fault-tolerant applications. Originally dynamically typed, but it is actively looking forward for static typing <a href="https://www.ins2i.cnrs.fr/en/cnrsinfo/dynamic-static-elixir-begins-its-transformation">cnrs</a>. As Joe Armstrong said about types &ldquo;no good type system save you from node failure&rdquo; - that is why Erlang language is dynamicly typed. And it is one of the two languages in this list available on Leetcode, but(!) I would strongly recommend to use <a href="https://exercism.org/">https://exercism.org/</a> for practice firstly. You can think about this language as more modern and easy to use language for BEAM runtime than original Erlang language.
+Why does it matter? Because Erlang really powers high load. You can find out more <a href="https://elixir-lang.org/cases.html">here</a> about real world use cases of Erlang its VM called BEAM. Whats-app cloud handles 2 millions connection per a node for instance.
+![[a.png|700]]
+<a href="https://x.com/guieevc/status/1002494428748140544">x.com</a>
+It is simple language nevertheless a powerful one. Maybe Elixir has not really good theoretical fundament, but it is still good language and its author Jose Valim actively works on bringing type system with synergy of academid world.
+![[Screenshot from 2024-08-11 23-09-45.png|500]]
+Picture from talk by creator of the lang Jose Valim about different levels of abstractions <a href="https://youtu.be/agkXUp0hCW8?si=2Osk6MSEbgocakfq">Keynote: Gang of None? Design Patterns in Elixir - José Valim | ElixirConf EU 2024 - YouTube</a></p>
+<h3 id="phoenix-top-from-stack-overflow-surveyshttpsgithubcomphoenixframeworkphoenix"><a href="https://github.com/phoenixframework/phoenix">Phoenix: Top from stack overflow surveys</a><a hidden class="anchor" aria-hidden="true" href="#phoenix-top-from-stack-overflow-surveyshttpsgithubcomphoenixframeworkphoenix">#</a></h3>
+<p>Stars: <strong>21k</strong><br>
+One of the most if not the most popular FP frameworks that has won &ldquo;the most admired web framework&rdquo; at stackoverflow research for several years in a row.
+<a href="https://survey.stackoverflow.co/2023/#section-admired-and-desired-web-frameworks-and-technologies">Stack Overflow Developer Survey 2023</a>
+Fullstack, Ruby inspired. Connects high load with easy of use.
+There are big companies using this framework check related block at <a href="https://www.phoenixframework.org/">Phoenix Framework</a></p>
+<h3 id="analyticshttpsgithubcomplausibleanalytics"><a href="https://github.com/plausible/analytics">analytics</a><a hidden class="anchor" aria-hidden="true" href="#analyticshttpsgithubcomplausibleanalytics">#</a></h3>
+<p>Stars: <strong>19.1k</strong><br>
+Simple, open source, lightweight (&lt; 1 KB) and privacy-friendly web analytics alternative to Google Analytics. Serious niche and good moral idea.
+All we can do - is to embrace such kind of projects.</p>
+<blockquote>
+<p>We are dedicated to making web analytics more privacy-friendly.</p>
+</blockquote>
+<h3 id="supabaserealtimehttpsgithubcomsupabaserealtime"><a href="https://github.com/supabase/realtime">supabase/realtime</a><a hidden class="anchor" aria-hidden="true" href="#supabaserealtimehttpsgithubcomsupabaserealtime">#</a></h3>
+<p>Stars: 6.6k<br>
+One of the projects of famous supabase project which leverages Phoenix from the first place. It makes use from BEAM through Elixir.</p>
+<blockquote>
+<p>This is a server built with Elixir using the  that enables the following functionality:</p>
+<ul>
+<li>Broadcast: Send ephemeral messages from client to clients with low latency.</li>
+<li>Presence: Track and synchronize shared state between clients.</li>
+<li>Postgres Changes: Listen to Postgres database changes and send them to authorized clients.</li>
+</ul>
+</blockquote>
+<h2 id="gleamhttpsgleamrun"><a href="https://gleam.run">Gleam</a><a hidden class="anchor" aria-hidden="true" href="#gleamhttpsgleamrun">#</a></h2>
+<p>Appeared at 2016. V1 was released at 4 Mar 2024, so it does not have popular projects yet, but it grows fast. Running on Erlang VM as Elixir, but statically typed in opposite of dynamically typed Elixir. Inspired by many languages and as author says &ldquo;I stole the best ideas for this language.&rdquo;, Louis Pilfold.
+And I have to admit that coding in Gleam is pleasant experience. It is really easy to learn and fast Language server gives instant feedback on type coherence.
+If you can choose among Erlang, Elixir and Gleam. You should deferentially look at  Gleam, but if you like Ruby look at Elixir of course.
+Maybe it is true opensource sponsored language, in this meaning it is a good example contrasting to Elm.
+Try it at <a href="https://tour.gleam.run/">The Gleam Language Tour</a></p>
+<p>P.S. Remember Golang mascot? yeah&hellip; Now look at this piece of art.
+![[Pasted image 20240812161117.png|200]]</p>
+<h3 id="front-end-in--gleamhttpsgithubcomlustre-labslustre"><a href="https://github.com/lustre-labs/lustre">Front end in  Gleam</a><a hidden class="anchor" aria-hidden="true" href="#front-end-in--gleamhttpsgithubcomlustre-labslustre">#</a></h3>
+<p>Lustre allows to write fullstack applications in Gleam reusing same types!
+Basically it follows the same MVC Elm architecture.</p>
+<h2 id="clojurehttpsclojureorg"><a href="https://clojure.org/">Clojure</a><a hidden class="anchor" aria-hidden="true" href="#clojurehttpsclojureorg">#</a></h2>
+<p>Appeared at 2007. There are a lot of talks on youtube about this language.
+Here are titans of Clojure world in terms of numbers of stars.
+Used at Walmart Labs
+“Our Clojure system just handled its first Walmart black Friday and came out without a scratch.”</p>
+<h3 id="metabasehttpsgithubcommetabasemetabase"><a href="https://github.com/metabase/metabase">metabase</a><a hidden class="anchor" aria-hidden="true" href="#metabasehttpsgithubcommetabasemetabase">#</a></h3>
+<p>Stars: <strong>37.4k</strong><br>
+Very popular tool for work with data for non-technical people. It let to get and visualize simple data without SQL, but for more complex queries SQL is required. One technical person can make views and all non technical part of a team can use it.</p>
+<h3 id="logseqhttpsgithubcomlogseqlogseq"><a href="https://github.com/logseq/logseq">logseq</a><a hidden class="anchor" aria-hidden="true" href="#logseqhttpsgithubcomlogseqlogseq">#</a></h3>
+<p>Stars: <strong>31.1k</strong><br>
+A privacy-first, open-source platform for knowledge management and collaboration.
+Notion and Obsidian like alternative.</p>
+<h3 id="penpothttpsgithubcompenpotpenpot"><a href="https://github.com/penpot/penpot">penpot</a><a hidden class="anchor" aria-hidden="true" href="#penpothttpsgithubcompenpotpenpot">#</a></h3>
+<p>Stars: <strong>29.5k</strong><br>
+The open-source tool for design and code collaboration.
+Figma alternative.
+By number of stars we can assume that IT world at least admired this tool.</p>
+<h2 id="elmhttpselm-langorg"><a href="https://elm-lang.org/">Elm</a><a hidden class="anchor" aria-hidden="true" href="#elmhttpselm-langorg">#</a></h2>
+<p>Appeared at 2012. Extremely efficient and deligtful to use to build browser UI. Can be seen as more simple and compact child of Haskell and OCaml. Has good and simple type system.
+There are elm-ui, elm-review popular libraries. And there is not much activity on official site actually, but languages is alive. It is in its afterhype period of time. In video below Evan told that he made compiler from Elm to SQL what sounds cool, but he really struggles to make sustainable financial model <a href="https://www.youtube.com/watch?v=XZ3w_jec1v8">&ldquo;The Economics of Programming Languages&rdquo; by Evan Czaplicki (Strange Loop 2023) - YouTube</a></p>
+<h2 id="haskellhttpswwwhaskellorg"><a href="https://www.haskell.org/">Haskell</a><a hidden class="anchor" aria-hidden="true" href="#haskellhttpswwwhaskellorg">#</a></h2>
+<p>Academic influenced language appeared in 1990 with stable release at 2010. From the beginning made with good type design comparing to the most other popular languages where types were introduced on the go.
+Highly admired by creator of ROC language - Richard Feldman. He also admired Elm as well.
+This language has a lot of concepts, so it is a good idea to learn language to explore FP ideas in practice.
+And I would say that language is excellent for well understood problem that can be something formally described to leverage its strong type system.
+Some researches say that there are better language than Haskell like Agda or Idris. Ok, but for many of FP languages Haskell is progenitor.</p>
+<h3 id="shellcheckhttpsgithubcomkoalamanshellcheck"><a href="https://github.com/koalaman/shellcheck">ShellCheck</a><a hidden class="anchor" aria-hidden="true" href="#shellcheckhttpsgithubcomkoalamanshellcheck">#</a></h3>
+<p>Stars: <strong>35.6k</strong><br>
+A static analysis tool for shell scripts adopted by:
+Travis CI, Codacy, Code Climate, Code Factor, CircleCI via the ShellCheck Orb
+Github (only Linux), Trunk Check (universal linter; allows you to explicitly version your shellcheck install) via the shellcheck plugin
+And you can use it for too if you work with bash/sh scripts.</p>
+<h3 id="pandochttpsgithubcomjgmpandoc"><a href="https://github.com/jgm/pandoc">pandoc</a><a hidden class="anchor" aria-hidden="true" href="#pandochttpsgithubcomjgmpandoc">#</a></h3>
+<p>Stars: <strong>33.3k</strong><br>
+Universal markup converter. Supports numerous format from/to. Practical and hepfull.</p>
+<h3 id="postgresthttpsgithubcompostgrestpostgrest"><a href="https://github.com/PostgREST/postgrest">PostgREST</a><a hidden class="anchor" aria-hidden="true" href="#postgresthttpsgithubcompostgrestpostgrest">#</a></h3>
+<p>Stars: <strong>22.7k</strong><br>
+REST API with automatically generated OpenAPI for any Postgres database. Expose database schema with filters and make Postgres views for complex API endpoints.
+If you often write CRUD API for database tables manually, it will save you somme time.</p>
+<h4 id="and-more-less-popular-projects">And more less popular projects<a hidden class="anchor" aria-hidden="true" href="#and-more-less-popular-projects">#</a></h4>
+<p>Like <a href="https://github.com/hadolint/hadolint">hadolint: Dockerfile linter, validate inline bash, written in Haskell</a>; Purescript, Unison, Idris languages implemented in Haskell.
+I recommend to check ideas behinds those projects. Especially Unison&rsquo;s mind-blowing something naive idea about infinite computational resoures.</p>
+<h2 id="reasonml">ReasonML<a hidden class="anchor" aria-hidden="true" href="#reasonml">#</a></h2>
+<p>Seems like extreme niche at this moment, I mean it is used only as alternative to JS when working with React.</p>
+<h2 id="scala">Scala<a hidden class="anchor" aria-hidden="true" href="#scala">#</a></h2>
+<p>Brings FP to Java land. Good path for whom looking for functional language to code and the best job opportunities. But definitely not the best in my humble opinion.</p>
+<h3 id="ensohttpsgithubcomenso-orgenso"><a href="https://github.com/enso-org/enso">Enso</a><a hidden class="anchor" aria-hidden="true" href="#ensohttpsgithubcomenso-orgenso">#</a></h3>
+<p>Stars: 7k<br>
+Interesting analytical tool and  language with one-to-one visual counterpart.
+And can be used for &ldquo;Detecting Credit Card Fraud with Enso&rdquo; as stated in their blog post.
+![[enso.png]]</p>
+<h2 id="python-with-returns-lib">Python with returns lib<a hidden class="anchor" aria-hidden="true" href="#python-with-returns-lib">#</a></h2>
+<p>Python is not functional language itself. And as I can relate does not want to be: look at lambda for instance. But this package allows to write more robust applications.
+Link to lib: <a href="https://github.com/dry-python/returns/tree/master">GitHub - dry-python/returns: Make your functions return something meaningful, typed, and safe!</a></p>
+<h1 id="in-closing">In closing<a hidden class="anchor" aria-hidden="true" href="#in-closing">#</a></h1>
+<p>You may wonder after all why then functional programming languages are not used everywhere if it is so good? So Richard gave a good answer to it: <a href="https://youtu.be/QyJZzq0v7Z4?si=R8jJpX7Amc2Ad-cI">Why Isn&rsquo;t Functional Programming the Norm? – Richard Feldman - YouTube</a>.</p>
+<h1 id="also-check-this">Also check this<a hidden class="anchor" aria-hidden="true" href="#also-check-this">#</a></h1>
+<ul>
+<li><a href="https://paulgraham.com/avg.html">Beating the Averages</a></li>
+<li><a href="https://youtu.be/0if71HOyVjY?si=5eri2O_O04u-NBYb">Functional Programming in 40 Minutes • Russ Olsen • GOTO 2018 - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=LkqTLJK2API">Why algebraic data types are important - Bartosz Milewski</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
